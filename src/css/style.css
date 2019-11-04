@@ -1,0 +1,574 @@
+body {
+    margin: 0;
+    background: #ffffff;
+    color: #000000;
+    font-family: "AgoraSansProLight",sans-serif;
+}
+h1,
+h2,
+.btn {
+    font-family: "AgoraSansProXThin", sans-serif;
+    letter-spacing: 0.06em;
+    font-size: 60px;
+    font-variant: small-caps;
+    font-weight: lighter;
+    margin: 0;
+}
+h3,
+.price {
+    font-family: "AgoraSansProLight", sans-serif;
+    font-weight: lighter;
+    font-variant: small-caps;
+    font-size: 24px;
+}
+.photobook_name {
+    font-family: "AgoraSansProLight", sans-serif;
+    font-weight: lighter;
+    font-variant: small-caps;
+    font-style: normal;
+}
+.wrapper {
+    display: flex;
+    width: 1080px;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 55px;
+}
+
+/*------HEADER------*/
+header {
+    min-height: 80px;
+}
+.header_container {
+    display: flex;
+    flex-direction: row;
+    width: 78%;
+    align-items: center;
+    padding: 20px 160px;
+}
+.menu_logo {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: flex-start;
+}
+/*------Burger button------*/
+.navigation-menu {
+    width: 25px;
+}
+.menu-icon span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: #000000;
+}
+.menu-icon span::before,
+.menu-icon span::after {
+  display: block;
+  width: 25px;
+  content: "";
+  height: 2px;
+  background-color: #000000;
+}
+.menu-icon span::before {
+    transform: translate(0, -9px);
+}
+.menu-icon span::after {
+    transform: translate(0, 7px);
+}
+
+.logo {
+    margin-left: 65px;
+}
+.phone_login {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: flex-end;
+}
+.phone {
+    border: 1px solid #ffd200;
+    border-radius: 10px;
+    background-color:#ffd200;
+    padding: 8px 30px;
+    margin-right: 55px;
+}
+.phone a {
+    color: #212121;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    text-decoration-style: dashed;
+    text-decoration-color: #212121;   
+}
+
+/*------PHOTOSTORY------*/
+.photostory {
+    height: 100%;
+    min-height: 547px;
+    background: url(../pic/mainbanner_bg.jpg) no-repeat center;
+    background-size: 1700px 547px;  
+}
+
+.photostory .wrapper {
+    flex-direction: column;
+    align-items: center;
+}
+.photostory h1 {
+    margin-bottom: 0px;
+    line-height: 0.6;
+}
+.photostory p {
+    font-size: 24px;
+    margin-bottom: 70px;
+}
+.photostory .btn {
+    border: 1px solid #212121;
+    border-radius: 10px;
+    padding: 20px 35px 17px 35px;
+    background: none;
+    text-align: center;
+    font-size: 26px;
+    color: #212121;
+    text-transform: uppercase;
+}
+
+/*------STEPS------*/
+.steps .wrapper { 
+    justify-content: center;
+}
+.step {
+    width: 140px;
+    font-size: 24px;
+    text-align: center;
+    margin: 0 65px;
+    margin-bottom: 90px;
+}
+.step::before {
+    content: "";
+    display: block;
+    width:130px;
+    height: 130px;
+    border: 5px solid #ffd200;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.download::before {
+    background: url("../pic/step_sprite.svg") no-repeat 37px 35px;
+}
+.download::after {
+    content: "";
+    display: block;
+    position: relative;
+    left: 140px;
+    bottom: 140px;
+    width: 130px;
+    border-top: 5px dashed #ffd200;
+}
+.design::before {
+    background: url("../pic/step_sprite.svg") no-repeat -232px 35px;
+}
+.design::after {
+    content: "";
+    display: block;
+    position: relative;
+    left: 140px;
+    bottom: 140px;
+    width: 130px;
+    border-top: 5px dashed #ffd200;
+}
+.pay::before {
+    background: url("../pic/step_sprite.svg") no-repeat -502px 35px;
+}
+.pay::after {
+    content: "";
+    display: block;
+    position: relative;
+    left: 140px;
+    bottom: 140px;
+    width: 130px;
+    border-top: 5px dashed #ffd200;
+}
+.get::before {
+    background: url("../pic/step_sprite.svg") no-repeat -770px 30px;
+}
+
+/*------ADVANTAGE------*/
+.advantage {
+    height: 100%;
+    min-height: 820px;
+    background-color: #f3f0e7;
+}
+.advantage .wrapper {
+    flex-direction: column;
+    align-items: center;
+    
+}
+.advantage h2 {
+    margin-bottom: 30px;
+}
+.advantage ul {
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+    list-style: none;
+    text-align: center;  
+    margin-bottom: 70px;
+}
+.advantage li {
+    width: 315px; 
+}
+.advantage .editing {
+    margin: 0 70px;
+}
+.advantage img {
+    width: 267px;
+    height: 267px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    align-content: center;
+}
+.advantage p {
+    font-size: 16px;
+}
+.advantage .btn {
+    border: 1px solid #e11a27;
+    border-radius: 10px;
+    padding: 20px 35px 17px 35px;
+    background: #e11a27;
+    text-align: center;
+    font-size: 26px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+/*------SOLUTIONS------*/
+.solutions {
+    min-height: 730px;
+    font-family: "AgoraSansProRegular", sans-serif;
+}
+.solutions .wrapper {
+    flex-direction: column;
+    align-items: center;
+}
+.options {
+    margin-top: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.solution {
+    width: 310px;
+    height:  418px;
+    border: 3px solid #ffd200;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.solutions h3 {
+    font-size: 36px;
+    letter-spacing: 0.7 em;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 0px;
+    padding: 35px 0;
+    background-color: #ffd200;
+}
+.solutions ul {
+    margin-top: -20px;
+    font-size: 18px;
+    list-style-image: url("../pic/list-style.svg");
+}
+.solutions li {
+    padding-bottom: 5px;
+}
+
+.solutions .price {
+    font-size: 60px;
+    align-self: center;
+    margin-top: auto;
+    font-weight: lighter;
+    line-height: 80%;
+    font-variant: normal;
+}
+.solutions .make_your {
+    margin-bottom: 0px;
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #ffd200;
+    font-family: "AgoraSansProThin", sans-serif;
+    font-size: 22px;
+    text-align: center;
+}
+
+.bestseller::before{
+    content: "";
+	display: block;
+	position: absolute;
+    width: 150px;
+    border-bottom: 23px solid #ffd200;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    top: -25px;
+    left: 60px;
+}
+.bestseller::after {
+    content: "bestseller";
+    position: absolute;
+    top: -25px;
+    left: 85px;
+    
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+
+    font-family: "AgoraSansProBold", sans-serif;
+    font-size: 20px;
+    
+    color:#e11a27;
+    font-variant: small-caps;    
+}
+
+/*------TESTIMONIALS------*/
+.testimonials {
+    background: url("../pic/banner_2_bg.jpg") no-repeat center;
+    min-height: 765px;
+    background-size: 1527px 767px;
+}
+.testimonials .wrapper {
+    flex-direction: column;
+    padding-top: 30px;
+}
+.testimonials .leftside_wrapper {
+    display: flex;
+    width: 50%;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.testimonials .testimonial {
+    align-items: flex-start;
+}
+.testimonials h2 {
+    margin-bottom: 45px;
+}
+.testimonials .photographer {
+    display: flex;
+    align-items: center;
+}
+.testimonials .bio {
+    margin-left: 25px;
+    box-sizing: content-box;
+    padding-bottom: 30px;
+}
+.testimonials .bio h3 {
+    letter-spacing: 0.06em;
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+.testimonials .bio span {
+    font-size: 18px;
+}
+.testimonials p {
+    width: 530px;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+.testimonials .next {
+    font-family: "AgoraSansProThin", sans-serif;
+    font-size: 16px;
+    border: none;
+    background: none;
+}
+.testimonials .next:hover {
+    text-decoration: underline;
+}
+
+.testimonials .next {
+    color: #000000;
+    font-size: 16px;
+    margin-top: 40px;
+    margin-bottom: 110px;
+    align-self: flex-end;
+    position: relative;
+    margin-right: 30px;
+}
+.testimonials .next:before {
+    position: absolute;
+    top: 10px;
+    right: -25px;
+    display: block;
+    content: "";
+    height: 1px;
+    width: 20px;
+    background-color: #000000;
+}
+.testimonials .next:after {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 8px;
+    right: -30px;
+    border-left: 7px solid #000000;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+}
+
+.testimonials .btn {
+    border: 1px solid #212121;
+    border-radius: 10px;
+    padding: 20px 35px 17px 35px;
+    background: none;
+    text-align: center;
+    font-size: 26px;
+    color: #212121;
+    text-transform: uppercase;
+    align-self: center;
+}
+
+/*------INFO------*/
+.info {
+    min-height: 660px;
+    font-family: "AgoraSansProRegular", sans-serif;
+    font-size: 18px;
+}
+.info .wrapper {
+    flex-direction: column;
+    align-items: center;
+}
+.infoboxes {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.info h3 {
+    font-size: 36px;
+    font-weight: lighter;
+    letter-spacing: 0.08em;
+    text-align: center;
+    background-color: #ffd200;
+    border-radius: 10px 10px 0 0;
+    padding: 15px 0 8px 0;
+    margin-bottom: 5px;
+}
+.infobox_content {
+    width: 245px;
+    height: 235px;
+    background-color: #f7f0e6;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 35px 20px 35px;
+    margin-bottom: 75px;
+}
+.infobox_content p {
+    margin-bottom: 0;
+}
+.infobox li {
+    line-height: 30px;
+}
+.infobox_content .note {
+    font-family: "AgoraSansProBold", sans-serif;
+    color: #e11a27;
+    letter-spacing: 0.04em;
+}
+.infobox_content .note em{
+    font-family: "AgoraSansProBold", sans-serif;
+    letter-spacing: 0.08em;
+}
+.info .btn {
+    border: 1px solid #e11a27;
+    border-radius: 10px;
+    padding: 20px 35px 17px 35px;
+    background: #e11a27;
+    text-align: center;
+    font-size: 26px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+/*------FOOTER------*/
+footer {
+    min-height: 380px;
+    background-color: #ffd200;
+    font-family: "AgoraSansProRegular", sans-serif;
+}
+.menu_map {
+    display: flex;
+    width: 85%;
+    justify-content: flex-start;
+}
+footer ul {
+    list-style: none;
+    font-size: 18px;
+    width: 150px;
+    border-top: 1px solid #000000;
+    margin: 0;
+    padding: 0;
+    margin-right: 80px;
+    padding-top: 20px;  
+}
+footer li {
+    margin-left: 0;
+    padding-left: 0;
+}
+footer li a {
+    text-decoration: none;
+    color: #000000;
+    line-height: 30px;
+}
+footer li a:hover {
+    text-decoration: underline;
+}
+
+.social-logo {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+}
+.social {
+    border-top: 1px solid #000000;
+    padding-top: 30px;
+}
+footer .social a {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    background: url("../pic/social_sprite.svg") no-repeat;
+    margin-right: 10px;
+}
+.social .facebook {
+    background-position: 0 0;
+}
+.social .vk {
+    background-position: -43px 0;
+}
+.social .instagram {
+    background-position: -85px 0;
+}
+footer .footer_logo {
+    display: flex;
+    flex-direction: column;
+    width: 85px;
+    height: 95px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    align-content: space-around;
+    padding-top: 15px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+footer .footer_logo span {
+    font-size: 11px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+footer .copyright {
+    text-align: center;
+    font-size: 14px;
+}
+footer .photobook_name {
+    font-family: "AgoraSansProRegular", sans-serif;
+}
